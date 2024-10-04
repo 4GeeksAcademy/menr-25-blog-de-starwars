@@ -1,3 +1,293 @@
-/* 
-    General Styles
-*/
+html, body{
+    background-image: url("https://cdn.registerdisney.go.com/v4/asset/bundler/STARWARS/v4/images/v1/starwars-background-web.webp");
+    background-size: cover;
+    background-position: center;
+    min-width: 100vh;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.navbarLetters{
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffe81f !important;
+}
+
+.navbarLetters:hover{
+    color: #ffffff !important;
+    font-size: 26px;
+}
+
+#local-nav-logo-desktop{
+    width: 100px;
+    height: 80px;
+}
+
+ footer {
+  text-align: center;
+  width: 100%;
+}
+
+.footerLetters{
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #ffe81f !important;
+}
+
+.footerLetters:hover{
+    color: #ffffff !important;
+    font-size: 16px;
+}
+
+.createdby{
+    color: #ffe81f;
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex-grow: 1;
+  padding-bottom: 120px !important;
+}
+
+.main-container2 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 50px !important;
+}
+
+h1{
+    color: #ffe81f;
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.favorite-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10%;
+    border: 2px solid #ffe81f ;
+    color: #ffe81f ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.favorite-btn:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.favorite-btn:active {
+    transform: scale(0.9);
+}
+
+.favorite-btn.selected {
+  color: red; 
+}
+
+.learn-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    height: 40px;
+    border-radius: 5%;
+    border: 2px solid #ffe81f ;
+    color: #ffe81f ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.learn-btn:hover {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.learn-btn:active {
+    transform: scale(0.9);
+}
+
+.titles{
+    color: #ffe81f;
+    font-size: 25px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.card-text{
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdown-menu{
+    color: #ffffff;
+    font-size: 15px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.dropdownText{
+    color: #ffe81f !important;
+    font-size: 20px;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.dropdownText:hover{
+    color: #ffe81f !important;
+    font-size: 21px;
+}
+
+.wrapper {
+  background: rgba(255, 255, 255, 0);
+   height: 100%;
+}
+  
+.cardPaddingBody {
+  padding: 20px;
+}
+  
+.cardPaddingFooter {
+  padding: 15px;
+}
+  
+.textRed h6, .textRed p {
+  margin: 0;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  overflow: hidden;
+}
+  
+.imgLearnMore {
+  max-width: 100%;
+  height: auto;
+}
+  
+hr {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.titleLetters{
+  font-size: 25px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffe81f!important;
+}
+
+.titleLetters2{
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: #ffe81f!important;
+}
+
+.pLetters{
+  color: #ffffff;
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.descTitleLetters{
+  color: rgb(242, 9, 9);
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.descLetters{
+  color: rgb(242, 9, 9);
+  font-size: 15px;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bodyCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  height: 100%;
+}
+
+.scroll-container {
+  display: flex;
+  flex-direction: row; 
+  overflow-x: auto;    
+  width: 85vw;        
+  padding: 10px;
+  gap: 15px;          
+}
+
+.scroll-container::-webkit-scrollbar {
+    height: 8px;  
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ffe81f;  
+    border-radius: 10px; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+}
+
+.card {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
