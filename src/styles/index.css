@@ -275,19 +275,32 @@ hr {
 }
 
 .scroll-container::-webkit-scrollbar {
-    height: 8px;  
+  height: 8px;  
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-    background-color: #ffe81f;  
-    border-radius: 10px; 
+  background-color: #ffe81f;  
+  border-radius: 10px; 
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .card {
-    flex-shrink: 0;
-    margin-right: 10px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.loadingDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.loadingImg {
+  width: 300px;
+  height: 300px;
 }

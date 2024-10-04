@@ -11,6 +11,17 @@ export const Characters = () => {
 		actions.loadData("people");
 	}, []);
 
+	if (store.loading || store.people.length === 0) {
+        return (
+            <>
+                <div className="loadingDiv">
+                    <img className="loadingImg" src="https://i.gifer.com/ZNeT.gif" alt="Loading" />
+                    <div className="text-center text-white">Loading...</div>
+                </div>
+            </>
+        );
+    }
+
 	return (
 		<>
 			<div className="d-flex justify-content-between">

@@ -10,6 +10,17 @@ export const Species = () => {
         actions.loadData('species');
     }, []);
 
+    if (store.loading || store.species.length === 0) {
+        return (
+            <>
+                <div className="loadingDiv">
+                    <img className="loadingImg" src="https://i.gifer.com/ZNeT.gif" alt="Loading" />
+                    <div className="text-center text-white">Loading...</div>
+                </div>
+            </>
+        );
+    }
+
     return (
         <>
             <div className="d-flex justify-content-between">
