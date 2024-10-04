@@ -24,7 +24,7 @@ export const Planets = () => {
     return (
         <>
             <div className="d-flex justify-content-between">
-                <h1 className="mt-5">Planets</h1>
+                <h1>Planets</h1>
 
                 <Link to="/">
                     <button className="btn btn-primary bg-transparent learn-btn">Back home</button>

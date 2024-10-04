@@ -10,7 +10,7 @@ export const Navbar = () => {
 					<header>
 						<div className="w-lg-75 mx-2 mx-lg-auto position-relative z-2 px-lg-3 py-1 ">
 
-							<nav className="navbar navbar-expand-lg navbar-dark p-0 fixed-top" id="navbar">
+							<nav className="navbar navbar-expand-lg navbar-dark p-0 border-bottom" id="navbar">
 
 								<div className="container px-sm-0">
 

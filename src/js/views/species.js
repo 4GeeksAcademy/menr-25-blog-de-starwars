@@ -24,7 +24,7 @@ export const Species = () => {
     return (
         <>
             <div className="d-flex justify-content-between">
-                <h1 className="mt-5">Species</h1>
+                <h1>Species</h1>
 
                 <Link to="/">
                     <button className="btn btn-primary bg-transparent learn-btn">Back home</button>

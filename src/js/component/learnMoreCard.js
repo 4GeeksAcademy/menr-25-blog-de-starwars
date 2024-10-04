@@ -23,7 +23,6 @@ export const LearnMoreCard = () => {
         return <div className="text-white">No properties available</div>;
     }
 
-    //const uid = properties.url ? properties.url.split('/').pop() : null;
     const adjustedType = type === "people" ? "characters" : type;
 
     console.log("adjustedType:", adjustedType)
@@ -64,7 +63,7 @@ export const LearnMoreCard = () => {
                     <div className="row text-center">
 
                         {Object.entries(properties).map(([key, value], index) => (
-                            <div key={index} className="col-md-2 descTitleLetters mb-5">
+                            <div key={index} className="col-md-2 descTitleLetters">
                                 <h6 className="titleLetters2">{key.replace('_', ' ').toUpperCase()}</h6>
                                 <p className="descLetters">{value}</p>
                             </div>
