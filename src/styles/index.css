@@ -14,6 +14,7 @@ html, body{
     font-weight: 600;
     font-style: normal;
     color: #ffe81f !important;
+    text-align: center;
 }
 
 .navbarLetters:hover{
@@ -26,9 +27,21 @@ html, body{
     height: 80px;
 }
 
- footer {
+footer {
+  position: relative;
+  bottom: 0;
   text-align: center;
+  padding: 10px;
   width: 100%;
+}
+
+.navbar, footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; 
+  height: auto;
+  margin: 0 auto;
 }
 
 .footerLetters{
@@ -38,6 +51,7 @@ html, body{
     font-weight: 600;
     font-style: normal;
     color: #ffe81f !important;
+    text-align: center;
 }
 
 .footerLetters:hover{
@@ -59,6 +73,7 @@ html, body{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  justify-content: space-between;
 }
 
 .content {
@@ -273,7 +288,7 @@ hr {
   display: flex;
   flex-direction: row; 
   overflow-x: auto;    
-  width: 85vw;        
+  width: 100vw;        
   padding: 10px;
   gap: 15px;          
 }
@@ -294,6 +309,8 @@ hr {
 .card {
   flex-shrink: 0;
   margin-right: 10px;
+  width: 250px;
+  max-width: 100%;
 }
 
 .loadingDiv {
@@ -307,4 +324,10 @@ hr {
 .loadingImg {
   width: 250px;
   height: 200px;
+}
+
+.container {
+  margin-left: 0 !important;
+  margin-bottom: 50px !important;
+  max-width: 100%;
 }

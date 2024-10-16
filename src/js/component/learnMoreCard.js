@@ -8,10 +8,6 @@ export const LearnMoreCard = () => {
     const { type, uid } = useParams();
     const item = store.selectedItem;
 
-    console.log("selectedItem:", item);
-    console.log("type param:", type);
-    console.log("uid param:", uid);
-
     if (!item) {
         return <div className="text-white">Loading...</div>
     };
@@ -24,9 +20,6 @@ export const LearnMoreCard = () => {
     }
 
     const adjustedType = type === "people" ? "characters" : type;
-
-    console.log("adjustedType:", adjustedType)
-    console.log("type prop:", type);
 
     const imgSrc = properties.name === "Tatooine" 
         ? "https://static.wikia.nocookie.net/theclonewiki/images/b/b4/Tatooine-TCW.png/revision/latest?cb=20230819004008" 

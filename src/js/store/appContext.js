@@ -18,10 +18,10 @@ const injectContext = PassedComponent => {
 		);
 
 		useEffect(() => {
-			const dataTypes = ["people", "planets", "species", "vehicles"];
-			dataTypes.forEach((type) => {
-				state.actions.loadData(type);
-			});
+			// state.actions.loadData('people')
+			// state.actions.loadData('planets')
+			// state.actions.loadData('species')
+			// state.actions.loadData('vehicles')
 		}, []);
 
 		return (

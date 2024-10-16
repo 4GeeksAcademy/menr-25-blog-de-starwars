@@ -7,9 +7,10 @@ import { Context } from "../store/appContext";
 export const Characters = () => {
 	const { store, actions } = useContext(Context);
 
+	//REVISAR 
 	useEffect(() => {
-		actions.loadData("people");
-	}, []);
+		console.log("Datos de people: ", store.people);
+	}, [store.people]);
 
 	if (store.loading || store.people.length === 0) {
         return (
@@ -35,7 +36,7 @@ export const Characters = () => {
 			<div className="container">
 				<div className="scroll-container">
 					{store.people.map((people) => (
-						<div className="col-md-4" key={people.uid}>
+						<div key={people.uid}>
 							<Card uid={people.uid} name={people.name} type={"people"} />
 						</div>
 					))}

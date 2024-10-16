@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { Characters } from "./characters";
 import { Planets } from "./planets";
 import { Species } from "./species";
@@ -6,7 +6,14 @@ import { Vehicles } from "./vehicles";
 import { Context } from "../store/appContext";
 
 export const Home = () => {
-	const { store } = useContext(Context);
+	const { store, actions } = useContext(Context);
+
+	useEffect(() => {
+		actions.loadData('people')
+		actions.loadData('planets')
+		actions.loadData('species')
+		actions.loadData('vehicles')
+	}, []);
 
 	if(store.loading){
 		return (

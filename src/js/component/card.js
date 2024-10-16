@@ -14,9 +14,6 @@ export const Card = ({ uid, name, type }) => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        if (!store[`${type}Details`][uid]) {
-            actions.loadDetails(uid, type); 
-        }
         setIsFavorite(store.favorites.some(fav => fav.uid === uid && fav.type === type));
     }, [uid, type, store.favorites]);
 
@@ -29,32 +26,24 @@ export const Card = ({ uid, name, type }) => {
         setIsFavorite(!isFavorite); 
     };
 
-    //const handleLearnMore = () => {
-    //    actions.setSelectedItem(uid, type);
-    //    navigate(`/info`);
-    //};
-
     const handleLearnMore = () => {
         actions.setSelectedItem(uid, type);
         navigate(`/info/${type}/${uid}`);
     };
     
-
     return (
         <>
+            {/* style={{width: "19rem"}} */}
             <div className="card bg-transparent border border-light-subtle" style={{width: "19rem"}}>
                 <img src={img} className="card-img-top" alt={name}/>
 
                 <div className="card-body">
                     <h5 className="card-title titles">{name}</h5>
 
-                    {details ? (
                         <p className="card-text text-white">
-                            {details.description ? details.description : 'No description available'}
+                            Personaje de Starwars
                         </p>
-                    ) : (
-                        <p className="card-text text-white">Loading details...</p>
-                    )}
+
 
 
                     <div className="d-flex justify-content-between">

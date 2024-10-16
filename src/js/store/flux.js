@@ -38,13 +38,24 @@ const getState = ({ getStore, getActions, setStore }) => {
                         setStore({
                             [`${type}`]: data.results,
                             [`${type}Qty`]: data.total_records,
-                            loading: false,
                         });
+                        console.log(`Datos de ${type}:`, data.results)
+                        getActions().checkIfAllDataLoaded();
                     })
                     .catch((error) => {
                         console.error(`Error loading ${type}:`, error);
                         setStore({ loading: false });
                     });
+            },
+            checkIfAllDataLoaded: () => {
+                const store = getStore();
+                const dataLoaded = store.people.length > 0 && 
+                                   store.planets.length > 0 &&
+                                   store.species.length > 0 &&
+                                   store.vehicles.length > 0;
+                if (dataLoaded) {
+                    setStore({ loading: false });
+                }
             },
             loadDetails: (uid, type) => {
                 const store = getStore();

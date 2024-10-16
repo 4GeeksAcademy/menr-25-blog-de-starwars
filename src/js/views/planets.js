@@ -6,9 +6,9 @@ import { Context } from "../store/appContext";
 export const Planets = () => {
     const { store, actions } = useContext(Context);
 
-    useEffect(() => {
-        actions.loadData('planets');
-    }, []);
+    // useEffect(() => {
+    //     actions.loadData('planets');
+    // }, []);
 
     if (store.loading || store.planets.length === 0) {
         return (
@@ -34,7 +34,7 @@ export const Planets = () => {
             <div className="container main">
                 <div className="scroll-container">
                     {store.planets.map((planet) => (
-                        <div className="col-md-4" key={planet.uid}>
+                        <div key={planet.uid}>
                             <Card uid={planet.uid} name={planet.name} type={"planets"} />
                         </div>
                     ))}

@@ -6,9 +6,9 @@ import { Context } from "../store/appContext";
 export const Vehicles = () => {
     const { store, actions } = useContext(Context);
 
-    useEffect(() => {
-        actions.loadData('vehicles');
-    }, []);
+    // useEffect(() => {
+    //     actions.loadData('vehicles');
+    // }, []);
 
     if (store.loading || store.vehicles.length === 0) {
         return (
@@ -34,7 +34,7 @@ export const Vehicles = () => {
             <div className="container main">
                 <div className="scroll-container">
                     {store.vehicles.map((vehicle) => (
-                        <div className="col-md-4" key={vehicle.uid}>
+                        <div key={vehicle.uid}>
                             <Card uid={vehicle.uid} name={vehicle.name} type={"vehicles"} />
                         </div>
                     ))}
